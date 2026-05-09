@@ -56,6 +56,8 @@
     "dev": "tsc --watch",
     "release": "release-it",
     "type-check": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "prepublishOnly": "bun run build"
   },
   "peerDependencies": {
@@ -67,15 +69,23 @@
     "@radix-ui/themes": "^3.2.1"
   },
   "devDependencies": {
-    "react": "^19.2.4",
-    "@mui/material": "^7.3.9",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.9",
     "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/themes": "^3.3.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitest/ui": "^4.1.5",
+    "happy-dom": "^20.9.0",
+    "react": "19.2.6",
+    "react-dom": "^19.2.6",
     "release-it": "^19.2.4",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.5"
   },
   "peerDependenciesMeta": {
     "@mui/material": {
